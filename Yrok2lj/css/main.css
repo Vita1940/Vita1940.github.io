@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+    background-color: #efefef;
+    font-family: Roboto;
+}
+main {
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    /*  он переносит на новую строчку каждый элемент, адаптация под формат страничный */
+    justify-content: center;
+    /* работает только с сеткой выравнивает блоки */
+    box-shadow: 0 0 10px 1px rgba(0, 9, 0, 0.2);
+}
+
+
+
+/* чтобы писать свойство мы пишем точку  */
+.photo {
+    width: calc(50% - 40px);
+    /* тут высчитывали отступы и для того чтобы адаптивная верстка была */
+    height: calc((35vw - 40px) / 16 * 9);
+    /* адаптация ширины; */
+    margin: 20px;
+    /* отступ между краем страницы и блоком. И ближайшим элементом или расстояние между блоками */
+    background-color: orange;
+    background-position: center;
+    background-size: cover;
+    /* не будет выходить за рамки */
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+/* чтобы картинки были плавнео в передвижении */
+}
+.photo:haver{
+    transform: rotate(3deg) scale(1.07);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.4);
+    /* для того чтобы дергались фото */
+}
+
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+.photo1 {
+    background-image: url(../img/img1.jpg);
+}
+.photo2 {
+    background-image: url(../img/img2.jpg);
+}
+.photo3 {
+    background-image: url(../img/img3.jpg);
+}
+.photo4 {
+    background-image: url(../img/img4.jpg);
+}
+.photo5 {
+    background-image: url(../img/img5.jpg);
+}
+.photo6 {
+    background-image: url(../img/img6.jpg);
+}
+.photo7 {
+    background-image: url(../img/img6.jpg);
+}
+.photo8 {
+    background-image: url(../img/img8.jpg);
+}
+.photo9 {
+    background-image: url(../img/img9.jpg);
+}
+.photo10 {
+    background-image: url(../img/img10.jpg);
+}
+.photo11 {
+    background-image: url(../img/img11.jpg);
+}
+.photo12 {
+    background-image: url(../img/img12.jpg);
+}
+
+
+/* у свойства дисплецй несколько значений . 
+1свойство-inline- значение по умолчанию, строчное отображение, элемент не переносится на след строчку
+2свойство-block- бллочное отображение, элемент прееносится на следующую строчку
+3свойство- flex-отображение для контейнера, так называемая гибкая сетка. она тянется растягивается, растяжение */
+
+
+/* margin: 50px;- все четыре стороны будут иметь отступ 50 */
+/* margin: 50px 20px; -top и bottom будут иметь отступ 50,  a right и  left -20px */
+/* margin: 50px 40px 30px;- top будет иметь осттуп 50, left и  right по 40, bottom -30px */
+/* margin: 50px 40px 30px 20px;-top будет иметь отступ 50, right -40px, bottom-30px left-20px*/
+/* margin: auto; выравнивает жлемент по горизонтальной оси */
